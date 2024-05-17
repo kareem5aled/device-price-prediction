@@ -1,0 +1,6 @@
+com\example\deviceapi\service\DeviceService.class
+com\example\deviceapi\model\Device.class
+com\example\deviceapi\repository\DeviceRepository.class
+com\example\deviceapi\controller\DeviceController.class
+com\example\deviceapi\config\AppConfig.class
+com\example\deviceapi\DeviceApiApplication.class
