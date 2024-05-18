@@ -13,11 +13,11 @@ public class Device {
     private Long id;
 
     private int batteryPower;
-    private boolean bluetooth;
+    private int bluetooth; 
     private float clockSpeed;
-    private boolean dualSim;
+    private int dualSim; 
     private int frontCamera;
-    private boolean fourG;
+    private int fourG; 
     private int internalMemory;
     private float mobileDepth;
     private float mobileWeight;
@@ -29,9 +29,9 @@ public class Device {
     private int screenHeight;
     private int screenWidth;
     private int talkTime;
-    private boolean threeG;
-    private boolean touchScreen;
-    private boolean wifi;
+    private int threeG; 
+    private int touchScreen; 
+    private int wifi; 
     private Integer priceRange; // This will be filled after prediction
 
     // Getters and Setters
@@ -52,11 +52,11 @@ public class Device {
         this.batteryPower = batteryPower;
     }
 
-    public boolean isBluetooth() {
+    public int isBluetooth() { 
         return bluetooth;
     }
 
-    public void setBluetooth(boolean bluetooth) {
+    public void setBluetooth(int bluetooth) { 
         this.bluetooth = bluetooth;
     }
 
@@ -68,11 +68,11 @@ public class Device {
         this.clockSpeed = clockSpeed;
     }
 
-    public boolean isDualSim() {
+    public int isDualSim() { 
         return dualSim;
     }
 
-    public void setDualSim(boolean dualSim) {
+    public void setDualSim(int dualSim) { 
         this.dualSim = dualSim;
     }
 
@@ -84,11 +84,11 @@ public class Device {
         this.frontCamera = frontCamera;
     }
 
-    public boolean isFourG() {
+    public int isFourG() { 
         return fourG;
     }
 
-    public void setFourG(boolean fourG) {
+    public void setFourG(int fourG) { 
         this.fourG = fourG;
     }
 
@@ -180,27 +180,27 @@ public class Device {
         this.talkTime = talkTime;
     }
 
-    public boolean isThreeG() {
+    public int isThreeG() { 
         return threeG;
     }
 
-    public void setThreeG(boolean threeG) {
+    public void setThreeG(int threeG) { 
         this.threeG = threeG;
     }
 
-    public boolean isTouchScreen() {
+    public int isTouchScreen() {
         return touchScreen;
     }
 
-    public void setTouchScreen(boolean touchScreen) {
+    public void setTouchScreen(int touchScreen) { 
         this.touchScreen = touchScreen;
     }
 
-    public boolean isWifi() {
+    public int isWifi() { 
         return wifi;
     }
 
-    public void setWifi(boolean wifi) {
+    public void setWifi(int wifi) { 
         this.wifi = wifi;
     }
 
