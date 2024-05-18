@@ -122,6 +122,6 @@ $ curl -X POST http://localhost:8080/api/devices/predict/{id}
 
 #### Expected output 
 ```bash
-Predicted price range for device {id}: 3
+'Predicted price range for device {id}: 3'
 ```
 
