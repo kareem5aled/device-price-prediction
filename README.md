@@ -77,9 +77,9 @@ DevicePriceClassification/
 └── README.md                 # This README file
 ```
 
-### Usage
-## Interacting with the Spring Boot Application
-# Adding a New Device
+## Usage
+### Interacting with the Spring Boot Application
+#### Adding a New Device
 ```bash
 curl -X POST -H "Content-Type: application/json" -d '{
     "batteryPower": 1043,
@@ -105,22 +105,22 @@ curl -X POST -H "Content-Type: application/json" -d '{
 }' http://localhost:8080/api/devices
 ```
 
-# Retrieving All Devices
+#### Retrieving All Devices
 ```bash
 curl http://localhost:8080/api/devices
 ```
-# Retrieving a Specific Device by ID
+#### Retrieving a Specific Device by ID
 
 ```bash
 curl http://localhost:8080/api/devices/{id}
 ```
 
-# Making a Prediction
+#### Making a Prediction
 ```bash
 $ curl -X POST http://localhost:8080/api/devices/predict/{id}
 ```
 
-# Expected output 
+#### Expected output 
 ```bash
 Predicted price range for device {id}: 3
 ```
