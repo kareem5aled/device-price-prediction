@@ -26,9 +26,54 @@ The Flask application hosts the machine learning model for predicting device pri
 # Navigate to the Flask App Directory
 cd flask-app
 
-# Install Required Python Packages
-pip install -r requirements.txt
 
 # Start the Flask Application
 python app.py
+```
+
+#### Spring Boot Application
+The Spring Boot application manages data operations and communicates with the Flask app to obtain predictions.
+
+```bash
+# Navigate to the Spring Boot App Directory
+cd device-api
+
+# Build the Project with Maven
+./mvnw clean install
+
+# Run the Spring Boot Application
+./mvnw spring-boot:run
+```
+
+### Project Structure 
+```
+DevicePriceClassification/
+│
+├── flask-app/                # Flask application directory
+│   ├── app.py                # Main Flask application file
+│   └── model/                # Contains ML model and scaler
+│       ├── best_model.pkl    # Serialized machine learning model
+│       └── scaler.pkl        # Serialized scaler
+│
+├── springboot-app/           # Spring Boot application directory
+│   ├── src/                  # Source files
+│   │   ├── main/
+│   │   │   ├── java/         # Java source files
+│   │   │   └── resources/    # Resources like application.properties
+│   │   └── test/             # Java test files
+│   ├── pom.xml               # Maven configuration file
+│   └── mvnw                  # Maven wrapper script
+│
+├── notebook/                 # Jupyter notebooks and data
+│   ├── Devices_Price_Classification_System.ipynb        # Jupyter notebook with analysis
+│   ├── data/                 # Dataset directory
+│   │   ├── train.xlsx        # Training data file
+│   │   └── test.xlsx         # Test data file
+│   └── outputs/              # Outputs from analysis
+│       ├── test_predictions.xlsx        # predicted price ranges from testset
+│       ├── best_model.pkl    # Serialized machine learning model
+│       └── scaler.pkl        # Serialized scaler
+│
+└── README.md                 # This README file
+```
 
